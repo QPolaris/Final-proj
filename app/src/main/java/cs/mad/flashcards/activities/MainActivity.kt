@@ -1,5 +1,6 @@
 package cs.mad.flashcards.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import cs.mad.flashcards.adapters.FlashcardSetAdapter
@@ -14,11 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.flashcardSetList.adapter = FlashcardSetAdapter(FlashcardSet.getHardcodedFlashcardSets())
-
-        binding.createSetButton.setOnClickListener {
-            (binding.flashcardSetList.adapter as FlashcardSetAdapter).addItem(FlashcardSet("test"))
-            binding.flashcardSetList.smoothScrollToPosition((binding.flashcardSetList.adapter as FlashcardSetAdapter).itemCount - 1)
+        binding.localWeatherButton.setOnClickListener {
+            binding.root.context.startActivity(Intent(binding.root.context, LocalWeatherActivity::class.java))
         }
     }
 }

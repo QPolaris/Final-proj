@@ -2647,7 +2647,6 @@ id correct_button
 id correct_count_text
 id cos
 id counterclockwise
-id create_set_button
 id currentState
 id custom
 id customPanel
@@ -2704,7 +2703,6 @@ id filled
 id fitToContents
 id fixed
 id flashcard_list
-id flashcard_set_list
 id flashcard_set_title
 id flashcard_title
 id flip
@@ -2744,6 +2742,7 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
+id json_view
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2756,6 +2755,7 @@ id line3
 id linear
 id listMode
 id list_item
+id local_weather_button
 id masked
 id match_constraint
 id match_parent
@@ -3087,6 +3087,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_flashcard_set_detail
+layout activity_local_weather
 layout activity_main
 layout activity_study_set
 layout custom_dialog

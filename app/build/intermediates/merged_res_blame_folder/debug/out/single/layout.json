@@ -1,22 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_flashcard_set_detail.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_flashcard_set_detail.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_flashcard_set.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\src\\main\\res\\layout\\item_flashcard_set.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_study_set.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_study_set.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_flashcard_set_detail.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\src\\main\\res\\layout\\activity_flashcard_set_detail.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_flashcard.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/item_flashcard.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_study_set.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\src\\main\\res\\layout\\activity_study_set.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_flashcard.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\src\\main\\res\\layout\\item_flashcard.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_local_weather.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_local_weather.xml"
+    },
+    {
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_flashcard_set.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/item_flashcard_set.xml"
     }
 ]

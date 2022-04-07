@@ -4,10 +4,10 @@ package cs.mad.flashcards.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.button.MaterialButton;
 import cs.mad.flashcards.R;
@@ -17,24 +17,24 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayoutCompat rootView;
 
   @NonNull
-  public final MaterialButton createSetButton;
+  public final MaterialButton localWeatherButton;
 
   @NonNull
-  public final RecyclerView flashcardSetList;
+  public final TextView text;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton createSetButton, @NonNull RecyclerView flashcardSetList) {
+  private ActivityMainBinding(@NonNull LinearLayoutCompat rootView,
+      @NonNull MaterialButton localWeatherButton, @NonNull TextView text) {
     this.rootView = rootView;
-    this.createSetButton = createSetButton;
-    this.flashcardSetList = flashcardSetList;
+    this.localWeatherButton = localWeatherButton;
+    this.text = text;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayoutCompat getRoot() {
     return rootView;
   }
 
@@ -59,20 +59,19 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.create_set_button;
-      MaterialButton createSetButton = rootView.findViewById(id);
-      if (createSetButton == null) {
+      id = R.id.local_weather_button;
+      MaterialButton localWeatherButton = rootView.findViewById(id);
+      if (localWeatherButton == null) {
         break missingId;
       }
 
-      id = R.id.flashcard_set_list;
-      RecyclerView flashcardSetList = rootView.findViewById(id);
-      if (flashcardSetList == null) {
+      id = R.id.text;
+      TextView text = rootView.findViewById(id);
+      if (text == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, createSetButton,
-          flashcardSetList);
+      return new ActivityMainBinding((LinearLayoutCompat) rootView, localWeatherButton, text);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

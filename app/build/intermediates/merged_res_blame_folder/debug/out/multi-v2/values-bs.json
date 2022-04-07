@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\donth\\.gradle\\caches\\transforms-2\\files-2.1\\f2aa155efc373fd9da3c1d0ea46b20c0\\material-1.5.0\\res\\values-bs\\values-bs.xml",
+                    "source": "/Users/tasheem/.gradle/caches/transforms-2/files-2.1/f2aa155efc373fd9da3c1d0ea46b20c0/material-1.5.0/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\donth\\.gradle\\caches\\transforms-2\\files-2.1\\f755b507e3ee4c4f7f2c3b3e99ab83a7\\appcompat-1.4.1\\res\\values-bs\\values-bs.xml",
+                    "source": "/Users/tasheem/.gradle/caches/transforms-2/files-2.1/f755b507e3ee4c4f7f2c3b3e99ab83a7/appcompat-1.4.1/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\donth\\.gradle\\caches\\transforms-2\\files-2.1\\f80e98fb1eb607a50e8fc819985bca22\\core-1.7.0\\res\\values-bs\\values-bs.xml",
+                    "source": "/Users/tasheem/.gradle/caches/transforms-2/files-2.1/f80e98fb1eb607a50e8fc819985bca22/core-1.7.0/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,9 +4,11 @@ cs/mad/flashcards/BuildConfig.java
  cs.mad.flashcards.BuildConfig
 cs/mad/flashcards/databinding/ActivityFlashcardSetDetailBinding.java
  cs.mad.flashcards.databinding.ActivityFlashcardSetDetailBinding
-cs/mad/flashcards/databinding/ActivityStudySetBinding.java
- cs.mad.flashcards.databinding.ActivityStudySetBinding
 cs/mad/flashcards/databinding/ItemFlashcardBinding.java
  cs.mad.flashcards.databinding.ItemFlashcardBinding
+cs/mad/flashcards/databinding/ActivityStudySetBinding.java
+ cs.mad.flashcards.databinding.ActivityStudySetBinding
 cs/mad/flashcards/databinding/ItemFlashcardSetBinding.java
  cs.mad.flashcards.databinding.ItemFlashcardSetBinding
+cs/mad/flashcards/databinding/ActivityLocalWeatherBinding.java
+ cs.mad.flashcards.databinding.ActivityLocalWeatherBinding
