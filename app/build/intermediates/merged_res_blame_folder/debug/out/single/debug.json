@@ -16,6 +16,10 @@
         "source": "/Users/nikolosnguyen/Final-Proj/app/src/main/res/layout/activity_local_weather.xml"
     },
     {
+        "merged": "/Users/nikolosnguyen/Final-Proj/app/build/intermediates/res/merged/debug/drawable_umbrella_logo_.png.flat",
+        "source": "/Users/nikolosnguyen/Final-Proj/app/src/main/res/drawable/umbrella_logo_.png"
+    },
+    {
         "merged": "/Users/nikolosnguyen/Final-Proj/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/nikolosnguyen/Final-Proj/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },

@@ -2506,6 +2506,7 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable umbrella_logo_
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2721,6 +2722,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id info
