@@ -3,9 +3,7 @@ package cs.mad.flashcards.activities
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import cs.mad.flashcards.adapters.FlashcardSetAdapter
 import cs.mad.flashcards.databinding.ActivityMainBinding
-import cs.mad.flashcards.entities.FlashcardSet
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -26,9 +26,6 @@
             android:exported="false" />
         <activity android:name="cs.mad.flashcards.activities.StudySetActivity" />
         <activity
-            android:name="cs.mad.flashcards.activities.FlashcardSetDetailActivity"
-            android:parentActivityName="cs.mad.flashcards.activities.MainActivity" />
-        <activity
             android:name="cs.mad.flashcards.activities.MainActivity"
             android:exported="true" >
             <intent-filter>
