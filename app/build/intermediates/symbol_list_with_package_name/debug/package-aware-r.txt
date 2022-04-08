@@ -1749,9 +1749,6 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
@@ -1759,6 +1756,9 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color sky_blue
+color sky_blue_2
+color sky_blue_3
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2577,7 +2577,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id add_flashcard_button
 id alertTitle
 id aligned
 id all
@@ -2601,7 +2600,6 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottom_layout
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2610,7 +2608,6 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
-id card_view
 id carryVelocity
 id center
 id center_horizontal
@@ -2633,7 +2630,6 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
-id completed_count_text
 id compress
 id confirm_button
 id constraint
@@ -2643,8 +2639,6 @@ id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
-id correct_button
-id correct_count_text
 id cos
 id counterclockwise
 id currentState
@@ -2656,7 +2650,6 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
-id delete_set_button
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -2692,7 +2685,6 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
-id exit_button
 id expand_activities_button
 id expanded_menu
 id fade
@@ -2702,9 +2694,6 @@ id fill_vertical
 id filled
 id fitToContents
 id fixed
-id flashcard_list
-id flashcard_set_title
-id flashcard_title
 id flip
 id floating
 id forever
@@ -2781,8 +2770,6 @@ id material_value_index
 id message
 id middle
 id mini
-id missed_button
-id missed_count_text
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2895,7 +2882,6 @@ id showHome
 id showTitle
 id sin
 id skipCollapsed
-id skip_button
 id skipped
 id slide
 id snackbar_action
@@ -2923,7 +2909,6 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
-id study_set_button
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -2968,8 +2953,6 @@ id title_template
 id toggle
 id top
 id topPanel
-id top_frame
-id top_layout
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3086,10 +3069,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_flashcard_set_detail
 layout activity_local_weather
 layout activity_main
-layout activity_study_set
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3106,8 +3087,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item_flashcard
-layout item_flashcard_set
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -16,10 +16,6 @@
         "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_flashcard_set.xml.flat",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\item_flashcard_set.xml"
-    },
-    {
         "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
@@ -52,20 +48,8 @@
         "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_study_set.xml.flat",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_study_set.xml"
-    },
-    {
         "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_flashcard_set_detail.xml.flat",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_flashcard_set_detail.xml"
-    },
-    {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_flashcard.xml.flat",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\item_flashcard.xml"
     },
     {
         "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
