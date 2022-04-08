@@ -4,10 +4,11 @@ package cs.mad.flashcards.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.LinearLayoutCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.button.MaterialButton;
 import cs.mad.flashcards.R;
@@ -17,7 +18,13 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayoutCompat rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final ConstraintLayout linearLayoutCompat2;
 
   @NonNull
   public final MaterialButton localWeatherButton;
@@ -25,16 +32,19 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView text;
 
-  private ActivityMainBinding(@NonNull LinearLayoutCompat rootView,
-      @NonNull MaterialButton localWeatherButton, @NonNull TextView text) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
+      @NonNull ConstraintLayout linearLayoutCompat2, @NonNull MaterialButton localWeatherButton,
+      @NonNull TextView text) {
     this.rootView = rootView;
+    this.button2 = button2;
+    this.linearLayoutCompat2 = linearLayoutCompat2;
     this.localWeatherButton = localWeatherButton;
     this.text = text;
   }
 
   @Override
   @NonNull
-  public LinearLayoutCompat getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -59,6 +69,14 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button2;
+      Button button2 = rootView.findViewById(id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      ConstraintLayout linearLayoutCompat2 = (ConstraintLayout) rootView;
+
       id = R.id.local_weather_button;
       MaterialButton localWeatherButton = rootView.findViewById(id);
       if (localWeatherButton == null) {
@@ -71,7 +89,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayoutCompat) rootView, localWeatherButton, text);
+      return new ActivityMainBinding((ConstraintLayout) rootView, button2, linearLayoutCompat2,
+          localWeatherButton, text);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

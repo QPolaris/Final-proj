@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/nikolosnguyen/Final-Proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_local_weather.xml",
+        "source": "/Users/nikolosnguyen/Final-Proj/app/src/main/res/layout/activity_local_weather.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_local_weather.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_local_weather.xml"
+        "merged": "/Users/nikolosnguyen/Final-Proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/nikolosnguyen/Final-Proj/app/src/main/res/layout/activity_main.xml"
     }
 ]
