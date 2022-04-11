@@ -33,14 +33,17 @@ class LocalWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
         if (response.isSuccessful) {
             Log.d("onResponse", "download success!")
             // Get main property that is located inside WeatherInfo class.
-            val weatherInfo = response.body()?.main
+            val weatherInfo = response.body()
             weatherInfo?.let {
                 // Update Textview
                 // val textView = binding.jsonView
                 // textView.text = weatherInfo.toString()
-                val textView = findViewById<TextView>(R.id.json_view)
-                textView.text = weatherInfo.toString()
+                val tempValue = findViewById<TextView>(R.id.temp_value)
+                tempValue.text = "${weatherInfo?.main?.temp.toString()}°"
                 println(weatherInfo.toString())
+
+                val windValue = findViewById<TextView>(R.id.wind_speed_value)
+                windValue.text = "${weatherInfo?.wind.speed} MPH"
             }
         }
     }
