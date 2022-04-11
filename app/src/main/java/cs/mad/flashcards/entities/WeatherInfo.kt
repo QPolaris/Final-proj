@@ -15,21 +15,11 @@ class WeatherInfo {
 
     var base: String = "N/A"
 
-    var main = object {
-        var temp: Double = 0.0
-        var feels_like: Double = 0.0
-        var temp_min: Double = 0.0
-        var temp_max: Double = 0.0
-        var pressure: Int = 0
-        var humidity: Int = 0
-    }
+    var main = MainInfo()
 
     var visibility: Int = 0
 
-    var wind = object {
-        var speed: Double = 0.0
-        var deg: Int = 0
-    }
+    var wind = WindInfo()
 
     var clouds = object {
         var all = 0
@@ -48,4 +38,18 @@ class WeatherInfo {
     var id = 420006353
     var name = "Mountain View"
     var cod = 200
+}
+
+class MainInfo {
+    var temp: Double = 0.0
+    var feels_like: Double = 0.0
+    var temp_min: Double = 0.0
+    var temp_max: Double = 0.0
+    var pressure: Int = 0
+    var humidity: Int = 0
+}
+
+class WindInfo {
+    var speed: Double = 0.0
+    var deg: Int = 0
 }
