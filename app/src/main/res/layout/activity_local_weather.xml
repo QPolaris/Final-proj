@@ -42,7 +42,7 @@
                 android:id="@+id/city_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Birmingham"
+                android:text="N/A"
                 android:textSize="25dp"
                 android:layout_marginBottom="35dp"
                 android:textColor="@color/black"/>

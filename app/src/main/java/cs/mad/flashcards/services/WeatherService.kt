@@ -23,5 +23,9 @@ class WeatherService() {
         @GET("weather?us&units=imperial")
         fun getWeatherInfo(@Query("zip") zipCode: Int,
         @Query("appid") API_KEY: String): Call<WeatherInfo>
+
+        @GET("weather?us&units=imperial")
+        fun getWeatherByCoord(@Query("lat") lat: Double,
+        @Query("lon") lon: Double, @Query("appid") API_KEY: String): Call<WeatherInfo>
     }
 }

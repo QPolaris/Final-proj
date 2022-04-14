@@ -1,9 +1,18 @@
 package cs.mad.flashcards.activities
 
+import android.Manifest
+import android.content.Context
+import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
 import android.os.Bundle
+import android.widget.Toast
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import cs.mad.flashcards.R
 import cs.mad.flashcards.databinding.ActivityLocalWeatherBinding
 import cs.mad.flashcards.entities.WeatherInfo
@@ -13,17 +22,52 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class LocalWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
+class LocalWeatherActivity : AppCompatActivity(), Callback<WeatherInfo>, LocationListener {
+    private lateinit var locationManager: LocationManager
     private lateinit var binding: ActivityLocalWeatherBinding
+    private val locationPermissionCode = 2
     val API_KEY = "0af6e62f4ea0c9d0d46f5e69e763805d"
     var zipCode = 35218
+    private lateinit var service: WeatherService
+    private lateinit var location: Location
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLocalWeatherBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_local_weather)
+        locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
-        WeatherService().weatherService.getWeatherInfo(zipCode, API_KEY).enqueue(this)
+        service = WeatherService()
+        // service.weatherService.getWeatherInfo(zipCode, API_KEY).enqueue(this)
+        getLocation()
+    }
+
+    private fun getLocation() {
+        if ((ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), locationPermissionCode)
+        }
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5f,
+            this)
+    }
+
+    override fun onLocationChanged(location: Location) {
+        println("----------------- location -----------------")
+        println(location.latitude)
+        println(location.longitude)
+        service.weatherService.getWeatherByCoord(location.latitude, location.longitude,
+            API_KEY).enqueue(this)
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == locationPermissionCode) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     override fun onResponse(
@@ -35,12 +79,11 @@ class LocalWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
             // Get main property that is located inside WeatherInfo class.
             val weatherInfo = response.body()
             weatherInfo?.let {
-                // Update Textview
-                // val textView = binding.jsonView
-                // textView.text = weatherInfo.toString()
+                val cityValue = findViewById<TextView>(R.id.city_value)
+                cityValue.text = weatherInfo?.name
+
                 val tempValue = findViewById<TextView>(R.id.temp_value)
                 tempValue.text = "${weatherInfo?.main?.temp.toString()}°"
-                println(weatherInfo.toString())
 
                 val windValue = findViewById<TextView>(R.id.wind_speed_value)
                 windValue.text = "${weatherInfo?.wind.speed} MPH"

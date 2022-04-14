@@ -20,12 +20,12 @@
         "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_local_weather.xml"
     },
     {
-        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
