@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,9 +23,6 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button2;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -36,15 +34,22 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView text;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull ImageView imageView, @NonNull ConstraintLayout linearLayoutCompat2,
-      @NonNull MaterialButton localWeatherButton, @NonNull TextView text) {
+  @NonNull
+  public final Button zipCodeButton;
+
+  @NonNull
+  public final EditText zipInput;
+
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout linearLayoutCompat2, @NonNull MaterialButton localWeatherButton,
+      @NonNull TextView text, @NonNull Button zipCodeButton, @NonNull EditText zipInput) {
     this.rootView = rootView;
-    this.button2 = button2;
     this.imageView = imageView;
     this.linearLayoutCompat2 = linearLayoutCompat2;
     this.localWeatherButton = localWeatherButton;
     this.text = text;
+    this.zipCodeButton = zipCodeButton;
+    this.zipInput = zipInput;
   }
 
   @Override
@@ -74,12 +79,6 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = rootView.findViewById(id);
-      if (button2 == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = rootView.findViewById(id);
       if (imageView == null) {
@@ -100,8 +99,20 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, button2, imageView,
-          linearLayoutCompat2, localWeatherButton, text);
+      id = R.id.zip_code_button;
+      Button zipCodeButton = rootView.findViewById(id);
+      if (zipCodeButton == null) {
+        break missingId;
+      }
+
+      id = R.id.zipInput;
+      EditText zipInput = rootView.findViewById(id);
+      if (zipInput == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, imageView, linearLayoutCompat2,
+          localWeatherButton, text, zipCodeButton, zipInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

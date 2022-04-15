@@ -24,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Flashcards" >
         <activity
+            android:name="cs.mad.flashcards.activities.InputWeatherActivity"
+            android:exported="false" />
+        <activity
             android:name="cs.mad.flashcards.activities.LocalWeatherActivity"
             android:exported="false" />
         <activity
