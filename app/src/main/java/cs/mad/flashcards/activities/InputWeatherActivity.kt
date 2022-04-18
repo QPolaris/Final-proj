@@ -14,6 +14,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 class InputWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
     private lateinit var binding: ActivityLocalWeatherBinding
     val API_KEY = "0af6e62f4ea0c9d0d46f5e69e763805d"
