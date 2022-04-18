@@ -23,7 +23,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class LocalWeatherActivity : AppCompatActivity(), Callback<WeatherInfo>, LocationListener {
     private lateinit var locationManager: LocationManager
     private lateinit var binding: ActivityLocalWeatherBinding

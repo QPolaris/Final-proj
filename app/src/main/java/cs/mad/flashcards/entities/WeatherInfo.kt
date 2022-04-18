@@ -17,11 +17,18 @@ class WeatherInfo {
         var all = 0
     }
     var dt = 1560350645
-    var sys = Sys()
+    var sys = object {
+        var type = 1
+        var id = 5122
+        var message = 0.0139
+        var country = "US"
+        var sunrise = 1560343627
+        var sunset = 1560396563
+    }
 
     var timezone = -25200
     var id = 420006353
-    var name = "Mountain View"
+    var name = "Birmingham"
     var cod = 200
 }
 
@@ -49,13 +56,4 @@ class Weather {
     var main: String = "N/A"
     var description: String = "N/A"
     var icon: String = "N/A"
-}
-
-class Sys {
-    var type = 1
-    var id = 5122
-    var message = 0.0139
-    var country = "US"
-    var sunrise = 1560343627
-    var sunset = 1560396563
 }

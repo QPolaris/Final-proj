@@ -1,4 +1,8 @@
-#Mon Apr 18 12:57:11 CDT 2022
+<<<<<<< HEAD
+#Mon Apr 18 13:38:39 CDT 2022
+=======
+#Sun Apr 17 23:13:08 CDT 2022
+>>>>>>> parent of bf60009 (Display the rest of the data on advanced stats page)
 path.3=classes.dex
 path.2=classes.dex
 path.1=classes.dex

@@ -1,11 +1,9 @@
 package cs.mad.flashcards.activities
 
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import cs.mad.flashcards.R
 import cs.mad.flashcards.databinding.ActivityAdvancedStatsBinding
 import cs.mad.flashcards.entities.WeatherInfo
@@ -13,11 +11,6 @@ import cs.mad.flashcards.services.WeatherService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.text.SimpleDateFormat
-import java.time.Instant
-import java.time.LocalDateTime
-import java.time.ZoneId
-import java.util.*
 
 class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
     private lateinit var binding: ActivityAdvancedStatsBinding
@@ -39,7 +32,6 @@ class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onResponse(call: Call<WeatherInfo>, response: Response<WeatherInfo>) {
         if (response.isSuccessful) {
             Log.d("onResponse", "download success!")
@@ -48,31 +40,6 @@ class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
 
             val cityValue = findViewById<TextView>(R.id.city_value)
             cityValue.text = weatherInfo?.name
-
-            val minTemp = findViewById<TextView>(R.id.min_temp_value)
-            minTemp.text = "${weatherInfo?.main?.temp_min.toString()}°F"
-
-            val maxTemp = findViewById<TextView>(R.id.max_temp_value)
-            maxTemp.text = "${weatherInfo?.main?.temp_max.toString()}°F"
-
-            val humidity = findViewById<TextView>(R.id.humidity_value)
-            humidity.text = "${weatherInfo?.main?.humidity.toString()}%"
-
-            val description = findViewById<TextView>(R.id.description_value)
-            description.text = weatherInfo?.weather?.get(0)?.description
-
-            val feelsLike = findViewById<TextView>(R.id.feels_like_value)
-            feelsLike.text = "${weatherInfo?.main?.feels_like}°F"
-
-            val sunrise = findViewById<TextView>(R.id.sunrise_value)
-            val sunriseUnix = weatherInfo?.sys?.sunrise?.toLong() ?: 0
-            val sunriseInstant = Instant.ofEpochSecond(sunriseUnix).atZone(ZoneId.systemDefault()).toLocalDateTime()
-            sunrise.text = sunriseInstant.toLocalTime().toString()
-
-            val sunset = findViewById<TextView>(R.id.sunset_value)
-            val sunsetUnix = weatherInfo?.sys?.sunset?.toLong() ?: 0
-            val sunsetInstant = Instant.ofEpochSecond(sunsetUnix).atZone(ZoneId.systemDefault()).toLocalDateTime()
-            sunset.text = sunsetInstant.toLocalTime().toString()
         }
     }
 

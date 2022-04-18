@@ -1,7 +1,9 @@
 package cs.mad.flashcards.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import cs.mad.flashcards.R
@@ -12,11 +14,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class InputWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
     private lateinit var binding: ActivityLocalWeatherBinding
     val API_KEY = "0af6e62f4ea0c9d0d46f5e69e763805d"
     var zipCode = 35124
+    private var weatherInfo: WeatherInfo? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +29,14 @@ class InputWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
             zipCode = extras.getInt("key")
         }
         WeatherService().weatherService.getWeatherInfo(zipCode, API_KEY).enqueue(this)
+
+        val btn = findViewById<Button>(R.id.advanced_stats_btn)
+        btn.setOnClickListener {
+            val intent = Intent(this, AdvancedStats::class.java)
+            intent.putExtra("Lat", this.weatherInfo?.coord?.lat.toString())
+            intent.putExtra("Lon", this.weatherInfo?.coord?.lon.toString())
+            startActivity(intent)
+        }
     }
 
     override fun onResponse(
@@ -37,6 +47,8 @@ class InputWeatherActivity : AppCompatActivity(), Callback<WeatherInfo> {
             Log.d("onResponse", "download success!")
             // Get main property that is located inside WeatherInfo class.
             val weatherInfo = response.body()
+            this.weatherInfo = weatherInfo
+
             weatherInfo?.let {
                 // Update Textview
                 // val textView = binding.jsonView
