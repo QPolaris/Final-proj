@@ -2618,6 +2618,8 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id advanced_stats_btn
+id advanced_stats_title
 id alertTitle
 id aligned
 id all
@@ -2649,6 +2651,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id card
 id carryVelocity
 id center
 id center_horizontal
@@ -2695,6 +2698,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description_value
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2731,6 +2735,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feels_like_value
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2757,6 +2762,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id humidity_value
 id icon
 id icon_group
 id icon_only
@@ -2814,8 +2820,10 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id max_temp_value
 id message
 id middle
+id min_temp_value
 id mini
 id month_grid
 id month_navigation_bar
@@ -2958,6 +2966,8 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sunrise_value
+id sunset_value
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3122,6 +3132,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_advanced_stats
 layout activity_local_weather
 layout activity_main
 layout custom_dialog

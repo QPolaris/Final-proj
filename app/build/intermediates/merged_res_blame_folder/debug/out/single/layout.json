@@ -1,10 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_advanced_stats.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_advanced_stats.xml"
     },
     {
-        "merged": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_local_weather.xml",
-        "source": "C:\\Users\\donth\\Desktop\\Spring2022\\CS422\\lab4_android\\Final-proj\\app\\src\\main\\res\\layout\\activity_local_weather.xml"
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_local_weather.xml",
+        "source": "/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/res/layout/activity_local_weather.xml"
     }
 ]

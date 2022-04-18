@@ -4,6 +4,8 @@ package cs.mad.flashcards.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -19,6 +21,12 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button advancedStatsBtn;
+
+  @NonNull
+  public final LinearLayout card;
+
+  @NonNull
   public final TextView cityValue;
 
   @NonNull
@@ -30,10 +38,13 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
   @NonNull
   public final TextView windSpeedValue;
 
-  private ActivityLocalWeatherBinding(@NonNull RelativeLayout rootView, @NonNull TextView cityValue,
+  private ActivityLocalWeatherBinding(@NonNull RelativeLayout rootView,
+      @NonNull Button advancedStatsBtn, @NonNull LinearLayout card, @NonNull TextView cityValue,
       @NonNull TextView localWeatherTitle, @NonNull TextView tempValue,
       @NonNull TextView windSpeedValue) {
     this.rootView = rootView;
+    this.advancedStatsBtn = advancedStatsBtn;
+    this.card = card;
     this.cityValue = cityValue;
     this.localWeatherTitle = localWeatherTitle;
     this.tempValue = tempValue;
@@ -67,6 +78,18 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.advanced_stats_btn;
+      Button advancedStatsBtn = rootView.findViewById(id);
+      if (advancedStatsBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.card;
+      LinearLayout card = rootView.findViewById(id);
+      if (card == null) {
+        break missingId;
+      }
+
       id = R.id.city_value;
       TextView cityValue = rootView.findViewById(id);
       if (cityValue == null) {
@@ -91,8 +114,8 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLocalWeatherBinding((RelativeLayout) rootView, cityValue,
-          localWeatherTitle, tempValue, windSpeedValue);
+      return new ActivityLocalWeatherBinding((RelativeLayout) rootView, advancedStatsBtn, card,
+          cityValue, localWeatherTitle, tempValue, windSpeedValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

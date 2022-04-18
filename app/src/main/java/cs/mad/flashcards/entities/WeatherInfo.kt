@@ -1,17 +1,9 @@
 package cs.mad.flashcards.entities
 
 class WeatherInfo {
-    var coord = object {
-        var lon: Double = 0.0
-        var lat: Double = 0.0
-    }
+    var coord = Coordinates()
 
-    var weather = object {
-        var id: Int = 800
-        var main: String = "N/A"
-        var description: String = "N/A"
-        var icon: String = "N/A"
-    }
+    var weather = mutableListOf<Weather>()
 
     var base: String = "N/A"
 
@@ -52,4 +44,16 @@ class MainInfo {
 class WindInfo {
     var speed: Double = 0.0
     var deg: Int = 0
+}
+
+class Coordinates {
+    var lon: Double = 0.0
+    var lat: Double = 0.0
+}
+
+class Weather {
+    var id: Int = 800
+    var main: String = "N/A"
+    var description: String = "N/A"
+    var icon: String = "N/A"
 }
