@@ -46,7 +46,7 @@ class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
             this.weatherInfo = weatherInfo
 
             val cityValue = findViewById<TextView>(R.id.city_value)
-            cityValue.text = weatherInfo?.name
+            cityValue.text = "${weatherInfo?.name?.toString()}"
 
             val minTemp = findViewById<TextView>(R.id.min_temp_value)
             minTemp.text = "${weatherInfo?.main?.temp_min.toString()}°F"
