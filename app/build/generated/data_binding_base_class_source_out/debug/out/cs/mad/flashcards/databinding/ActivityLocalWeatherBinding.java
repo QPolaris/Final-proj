@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import cs.mad.flashcards.R;
 import java.lang.NullPointerException;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ActivityLocalWeatherBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Button advancedStatsBtn;
@@ -33,27 +33,31 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
   public final TextView localWeatherTitle;
 
   @NonNull
+  public final ConstraintLayout relativeLayout;
+
+  @NonNull
   public final TextView tempValue;
 
   @NonNull
   public final TextView windSpeedValue;
 
-  private ActivityLocalWeatherBinding(@NonNull RelativeLayout rootView,
+  private ActivityLocalWeatherBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button advancedStatsBtn, @NonNull LinearLayout card, @NonNull TextView cityValue,
-      @NonNull TextView localWeatherTitle, @NonNull TextView tempValue,
-      @NonNull TextView windSpeedValue) {
+      @NonNull TextView localWeatherTitle, @NonNull ConstraintLayout relativeLayout,
+      @NonNull TextView tempValue, @NonNull TextView windSpeedValue) {
     this.rootView = rootView;
     this.advancedStatsBtn = advancedStatsBtn;
     this.card = card;
     this.cityValue = cityValue;
     this.localWeatherTitle = localWeatherTitle;
+    this.relativeLayout = relativeLayout;
     this.tempValue = tempValue;
     this.windSpeedValue = windSpeedValue;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -102,6 +106,8 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
+
       id = R.id.temp_value;
       TextView tempValue = rootView.findViewById(id);
       if (tempValue == null) {
@@ -114,8 +120,8 @@ public final class ActivityLocalWeatherBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLocalWeatherBinding((RelativeLayout) rootView, advancedStatsBtn, card,
-          cityValue, localWeatherTitle, tempValue, windSpeedValue);
+      return new ActivityLocalWeatherBinding((ConstraintLayout) rootView, advancedStatsBtn, card,
+          cityValue, localWeatherTitle, relativeLayout, tempValue, windSpeedValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

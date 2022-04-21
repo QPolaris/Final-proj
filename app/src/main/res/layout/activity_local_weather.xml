@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.LocalWeatherActivity"
-    android:background="#74d3e4"
-    android:gravity="center">
+    android:background="#FFFFFF"
+    android:gravity="center"
+    tools:context=".activities.LocalWeatherActivity">
 
     <TextView
         android:id="@+id/local_weather_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="51dp"
         android:text="Weather At Your Location"
+        android:textColor="@color/purple"
         android:textSize="28dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:id="@+id/card"
-        android:layout_width="315dp"
-        android:layout_height="400dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="46dp"
+        android:background="@color/sky_blue"
+        android:gravity="center"
         android:orientation="vertical"
-        android:background="#6783dd"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/local_weather_title"
-        android:gravity="center">
+        app:layout_constraintBottom_toTopOf="@+id/advanced_stats_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local_weather_title">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,41 +45,41 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="City: "
-                android:textSize="25dp"
                 android:layout_marginBottom="35dp"
-                android:textColor="@color/black"/>
+                android:text="City: "
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/city_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
-                android:textSize="25dp"
                 android:layout_marginBottom="35dp"
-                android:textColor="@color/black"/>
+                android:text="N/A"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="25dp">
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Temp: "
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/temp_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N/A"
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,16 +90,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Wind Speed: "
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/wind_speed_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N/A "
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"
+                android:textSize="25dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -96,8 +107,10 @@
         android:id="@+id/advanced_stats_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/card"
+        android:layout_marginBottom="74dp"
         android:text="Advanced Stats"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="60dp"/>
-</RelativeLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card" />
+</androidx.constraintlayout.widget.ConstraintLayout>

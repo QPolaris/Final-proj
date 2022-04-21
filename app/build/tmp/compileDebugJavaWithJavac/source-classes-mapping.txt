@@ -1,7 +1,7 @@
-cs/mad/flashcards/databinding/ActivityMainBinding.java
- cs.mad.flashcards.databinding.ActivityMainBinding
 cs/mad/flashcards/databinding/ActivityAdvancedStatsBinding.java
  cs.mad.flashcards.databinding.ActivityAdvancedStatsBinding
+cs/mad/flashcards/databinding/ActivityMainBinding.java
+ cs.mad.flashcards.databinding.ActivityMainBinding
 cs/mad/flashcards/BuildConfig.java
  cs.mad.flashcards.BuildConfig
 cs/mad/flashcards/databinding/ActivityLocalWeatherBinding.java

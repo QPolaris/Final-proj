@@ -14,6 +14,7 @@
         android:layout_marginTop="68dp"
         android:text="Umbrella"
         android:textAlignment="textStart"
+        android:textColor="#332A53"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,17 +25,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
-        android:text="Local Weather"
+        android:text="LOCAL WEATHER"
         android:textAllCaps="false"
-        android:textColor="#332A53"
-        app:backgroundTint="@color/white"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/sky_blue"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#33AAAAAA"
-        app:strokeColor="#332A53"
-        app:strokeWidth="2dp" />
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="0dp" />
 
     <Button
         android:id="@+id/zip_code_button"
@@ -67,6 +68,7 @@
         android:inputType="number"
         android:minHeight="48dp"
         android:text="35080"
+        android:textColor="@color/purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/local_weather_button" />

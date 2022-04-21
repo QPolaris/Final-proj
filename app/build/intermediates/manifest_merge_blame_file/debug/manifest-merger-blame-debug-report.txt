@@ -6,120 +6,120 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml
+8-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml
+9-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-12-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:6:5-79
-12-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:6:22-76
+12-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:7:5-81
-13-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:7:22-78
+13-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:7:22-78
 14
 15    <application
-15-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:9:5-34:19
+15-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:9:5-34:19
 16        android:allowBackup="true"
-16-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:10:9-35
+16-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.7.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/f80e98fb1eb607a50e8fc819985bca22/core-1.7.0/AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.7.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\f80e98fb1eb607a50e8fc819985bca22\core-1.7.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:extractNativeLibs="false"
 20        android:icon="@mipmap/ic_launcher"
-20-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:11:9-43
+20-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:11:9-43
 21        android:label="@string/app_name"
-21-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:12:9-41
+21-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:12:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:13:9-54
+22-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:13:9-54
 23        android:supportsRtl="true"
-23-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:14:9-35
+23-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:14:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.Flashcards" >
-25-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:15:9-48
+25-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:15:9-48
 26        <activity
-26-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:16:9-18:40
+26-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:16:9-18:40
 27            android:name="cs.mad.flashcards.activities.AdvancedStats"
-27-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:17:13-53
+27-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:17:13-53
 28            android:exported="false" />
-28-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:18:13-37
+28-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:18:13-37
 29        <activity
-29-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:19:9-21:40
+29-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:19:9-21:40
 30            android:name="cs.mad.flashcards.activities.InputWeatherActivity"
-30-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:20:13-60
+30-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:20:13-60
 31            android:exported="false" />
-31-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:21:13-37
+31-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:21:13-37
 32        <activity
-32-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:22:9-24:40
+32-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:22:9-24:40
 33            android:name="cs.mad.flashcards.activities.LocalWeatherActivity"
-33-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:23:13-60
+33-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:23:13-60
 34            android:exported="false" />
-34-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:24:13-37
+34-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:24:13-37
 35        <activity
-35-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:25:9-33:20
+35-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:25:9-33:20
 36            android:name="cs.mad.flashcards.activities.MainActivity"
-36-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:26:13-52
+36-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:26:13-52
 37            android:exported="true" >
-37-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:27:13-36
+37-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:27:13-36
 38            <intent-filter>
-38-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:28:13-32:29
+38-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:28:13-32:29
 39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:29:17-69
-39-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:29:25-66
+39-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:29:17-69
+39-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:29:25-66
 40
 41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:31:17-77
-41-->/Users/tasheem/AndroidStudioProjects/Final-proj/app/src/main/AndroidManifest.xml:31:27-74
+41-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:31:17-77
+41-->C:\Users\donth\Desktop\Spring2022\CS422\lab4_android\Final-proj\app\src\main\AndroidManifest.xml:31:27-74
 42            </intent-filter>
 43        </activity>
 44
 45        <service
-45-->[androidx.room:room-runtime:2.4.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/230f147b5f7453db41ac7511e8a1e45d/room-runtime-2.4.1/AndroidManifest.xml:25:9-28:40
+45-->[androidx.room:room-runtime:2.4.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\230f147b5f7453db41ac7511e8a1e45d\room-runtime-2.4.1\AndroidManifest.xml:25:9-28:40
 46            android:name="androidx.room.MultiInstanceInvalidationService"
-46-->[androidx.room:room-runtime:2.4.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/230f147b5f7453db41ac7511e8a1e45d/room-runtime-2.4.1/AndroidManifest.xml:26:13-74
+46-->[androidx.room:room-runtime:2.4.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\230f147b5f7453db41ac7511e8a1e45d\room-runtime-2.4.1\AndroidManifest.xml:26:13-74
 47            android:directBootAware="true"
-47-->[androidx.room:room-runtime:2.4.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/230f147b5f7453db41ac7511e8a1e45d/room-runtime-2.4.1/AndroidManifest.xml:27:13-43
+47-->[androidx.room:room-runtime:2.4.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\230f147b5f7453db41ac7511e8a1e45d\room-runtime-2.4.1\AndroidManifest.xml:27:13-43
 48            android:exported="false" />
-48-->[androidx.room:room-runtime:2.4.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/230f147b5f7453db41ac7511e8a1e45d/room-runtime-2.4.1/AndroidManifest.xml:28:13-37
+48-->[androidx.room:room-runtime:2.4.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\230f147b5f7453db41ac7511e8a1e45d\room-runtime-2.4.1\AndroidManifest.xml:28:13-37
 49
 50        <activity
-50-->[com.google.android.gms:play-services-base:18.0.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/e5a34a53d41ca591d30887e249b90a56/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+50-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\e5a34a53d41ca591d30887e249b90a56\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-51-->[com.google.android.gms:play-services-base:18.0.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/e5a34a53d41ca591d30887e249b90a56/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+51-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\e5a34a53d41ca591d30887e249b90a56\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 52            android:exported="false"
-52-->[com.google.android.gms:play-services-base:18.0.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/e5a34a53d41ca591d30887e249b90a56/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+52-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\e5a34a53d41ca591d30887e249b90a56\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-53-->[com.google.android.gms:play-services-base:18.0.1] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/e5a34a53d41ca591d30887e249b90a56/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+53-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\e5a34a53d41ca591d30887e249b90a56\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 54
 55        <meta-data
-55-->[com.google.android.gms:play-services-basement:18.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0cdf2d851cbe4ea853083dac0f8fb8c6/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+55-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0cdf2d851cbe4ea853083dac0f8fb8c6\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 56            android:name="com.google.android.gms.version"
-56-->[com.google.android.gms:play-services-basement:18.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0cdf2d851cbe4ea853083dac0f8fb8c6/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+56-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0cdf2d851cbe4ea853083dac0f8fb8c6\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 57            android:value="@integer/google_play_services_version" />
-57-->[com.google.android.gms:play-services-basement:18.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0cdf2d851cbe4ea853083dac0f8fb8c6/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+57-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0cdf2d851cbe4ea853083dac0f8fb8c6\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 58
 59        <provider
-59-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 61            android:authorities="cs.mad.flashcards.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 63            <meta-data
-63-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.0.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/0ec8049b2bd985a243ef7ec0ef83c7a1/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\0ec8049b2bd985a243ef7ec0ef83c7a1\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/fd7d2f93d1e3b38de17ae6dc0ae27139/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\fd7d2f93d1e3b38de17ae6dc0ae27139\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/fd7d2f93d1e3b38de17ae6dc0ae27139/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+67-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\fd7d2f93d1e3b38de17ae6dc0ae27139\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/tasheem/.gradle/caches/transforms-2/files-2.1/fd7d2f93d1e3b38de17ae6dc0ae27139/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+68-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\donth\.gradle\caches\transforms-2\files-2.1\fd7d2f93d1e3b38de17ae6dc0ae27139\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 69        </provider>
 70    </application>
 71

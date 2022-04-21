@@ -20,6 +20,7 @@ class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
     private lateinit var binding: ActivityAdvancedStatsBinding
     private lateinit var service: WeatherService
     val API_KEY = "0af6e62f4ea0c9d0d46f5e69e763805d"
+    private var weatherInfo: WeatherInfo? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +43,7 @@ class AdvancedStats : AppCompatActivity(), Callback<WeatherInfo> {
             Log.d("onResponse", "download success!")
             // Get main property that is located inside WeatherInfo class.
             val weatherInfo = response.body()
+            this.weatherInfo = weatherInfo
 
             val cityValue = findViewById<TextView>(R.id.city_value)
             cityValue.text = weatherInfo?.name
